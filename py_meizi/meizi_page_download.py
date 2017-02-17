@@ -1,4 +1,5 @@
 #-*- coding: utf-8 -*-
+#单页面多图下载
 
 import urllib2
 import os
