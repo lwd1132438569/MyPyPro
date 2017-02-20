@@ -21,6 +21,16 @@ NEWSPIDER_MODULE = 'ldy.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+USER_AGENT = 'User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+
+DEFAULT_REQUEST_HEADERS = {
+    'Referer': 'http://www.weibo.com'
+}
+
+ITEM_PIPELINES = {
+    'ldy.pipelines.LdyPipeline': 1
+}
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
